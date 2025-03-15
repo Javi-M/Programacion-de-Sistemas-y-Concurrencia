@@ -80,7 +80,7 @@ int main() {
 
     crearAB(&arbol);
     
-    insertarEnABB(&arbol, 1);
+    insertarEnABB(&arbol, 5);
     insertarEnABB(&arbol, 3);
     insertarEnABB(&arbol, 10);
     insertarEnABB(&arbol, 10);
@@ -90,7 +90,12 @@ int main() {
     insertarEnABB(&arbol, 2);
     
     recorrerABB(arbol);
-    
+    printf("\n");
+
+    // Borremos la parte izquierda. Deberíamos ver solo los mayores iguales
+    // que la raíz 5:
+    destruirABB(&(arbol->izq));
+    recorrerABB(arbol);
     printf("\n");
 }
 

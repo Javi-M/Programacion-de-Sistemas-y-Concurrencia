@@ -1,15 +1,8 @@
 # Programación de Sistemas y Concurrencia
 Repositorio para la asignatura. Esta asignatura utiliza los lenguajes C y Java.
 
-En este repositorio podrás ver:
-- 
-
-
-**TODO: Tabla explicando contenidos del repositorio. Un índice**
-(TODO: Poner links una vez subido a github)
-
 # Exámenes C
 
-| Fecha         | Contenidos    |
-|---------------|---------------|
-| Abril de 2012 | Árbol binario |
+| Fecha         | Contenidos    | Estado |
+|---------------|---------------|--------|
+| [Abril de 2012](https://github.com/Javi-M/Programacion-de-Sistemas-y-Concurrencia/blob/main/Examenes-C/Abril-2012.c) | Árbol binario | En progreso

@@ -65,9 +65,13 @@ void recorrerABB(TArbol arbol) {
     recorrerABBHelper(arbol, &impreso);
 }
 
-
-void destruirABB(TArbol *arb) {
-
+void destruirABB(TArbol *arbol) {
+    if (*arbol != NULL) {
+        destruirABB(&((*arbol)->izq));
+        destruirABB(&((*arbol)->der));
+        free(*arbol);
+        *arbol = NULL;
+    }
 }
 
 

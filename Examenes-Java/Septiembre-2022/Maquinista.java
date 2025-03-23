@@ -1,5 +1,3 @@
-package viajeTren;
-
 import java.util.*;
 public class Maquinista extends Thread{
 

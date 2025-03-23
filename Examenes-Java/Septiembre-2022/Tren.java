@@ -1,7 +1,3 @@
-package viajeTren;
-
-
-
 public class Tren {
 	
 	

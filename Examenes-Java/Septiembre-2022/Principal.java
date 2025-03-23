@@ -1,15 +1,19 @@
-package viajeTren;
-
 public class Principal {
 
 	public static void main(String[] args) {
 		Tren tren = new Tren();
-		Maquinista m = new Maquinista(tren);
-		Pasajero[] pas = new Pasajero[20];
-		for (int i=0; i<pas.length; i++)
-			pas[i] = new Pasajero(tren,i);
-		m.start();
-		for (int i=0; i<pas.length; i++)
-			pas[i].start();
+		Maquinista maquinista = new Maquinista(tren);
+		Pasajero[] pasajeros = new Pasajero[20];
+
+		// Crear pasajeros con sus ids
+		for (int i=0; i<pasajeros.length; i++) {
+			pasajeros[i] = new Pasajero(tren, i);
+		}	
+
+		maquinista.start();
+		
+		for (int i=0; i<pasajeros.length; i++) {
+			pasajeros[i].start();
+		}
 	}
 }

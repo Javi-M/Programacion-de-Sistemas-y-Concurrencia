@@ -1,5 +1,3 @@
-package viajeTren;
-
 public class Pasajero extends Thread{
 
 	private int id;
@@ -9,7 +7,6 @@ public class Pasajero extends Thread{
 		this.tren = tren;
 		this.id = id;
 	}
-	
 	
 	public void run() {
 		while (true) {

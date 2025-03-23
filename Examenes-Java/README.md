@@ -24,3 +24,8 @@ Comportamiento del Maquinista:
 Implementar la clase `Tren` de dos formas:
 1. Utilizando semáforos binarios
 2. Métodos sincronizados o locks
+
+# Estrategia
+Implementar primero el código _ignorando la concurrencia_ (mutex, semáforos, etc.)
+Luego, ver dónde hay que poner cada cosa. (Esta sentencia debería ir en mutex con esta otra, etc.)
+

@@ -2,10 +2,13 @@ import java.util.*;
 public class Maquinista extends Thread{
 
 	private Tren tren;
+	
 	public Maquinista(Tren tren) {
 		this.tren = tren;
 	}
+
 	private Random r = new Random();
+
 	public void run() {
 		while (true) {
 			try {

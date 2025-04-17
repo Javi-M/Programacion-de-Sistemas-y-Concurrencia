@@ -36,3 +36,5 @@ Si dos hebras leen el mismo valor antes de que alguna lo actualice, una actualiz
 > generar 100 valores). ¿Se recogen todos los valores? ¿Qué ocurre? Intenta
 > solucionar los problemas detectados.
 
+
+

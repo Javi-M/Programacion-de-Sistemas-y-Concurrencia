@@ -1,4 +1,4 @@
-package Ejercicio2;
+package ejercicio2;
 
 public class MiHebra extends Thread {
     private VariableCompartida v;

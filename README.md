@@ -1,6 +1,21 @@
 # Programación de Sistemas y Concurrencia
 Repositorio para la asignatura. Esta asignatura utiliza los lenguajes C y Java.
 
+Importa el repositorio como un proyecto Maven existente para que detecte
+bien los archivos fuente. Si modificas cualquier cosa, ten en cuenta que 
+probablemente tengas que modificar el `pom.xml` también. 
+
+Cualquier carpeta que añadas que quieras que se comporte como "un paquete Java",
+añádelo en `<sources>`.
+
+Por ejemplo: `<source>Practicas-y-ejercicios/Tema-4/ejercicio2</source>` quiere
+decir que `ejercicio2` es un paquete con código fuente (source).
+
+Esta estructura me parece más legible a la hora de estudiar los contenidos, 
+aunque no sea la que se elegiría para un proyecto de verdad.
+
+Para C, compila a manita con `gcc`.
+
 # Exámenes C
 [Examenes-C](Examenes-C)
 

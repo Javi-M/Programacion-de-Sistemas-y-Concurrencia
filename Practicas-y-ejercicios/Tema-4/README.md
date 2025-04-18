@@ -42,3 +42,11 @@ actualización puede sobrescribir la otra. (Se dan **condiciones de carrera**).
 > pantalla varias veces (valor pasado como parámetro en el constructor) el 
 > carácter que se le indique (también indicado como parámetro). ¿Se mezclan las
 > letras? Justifica el comportamiento observado.
+
+## Ejercicio 5
+> Implementar un programa en Java que permita calcular términos de la sucesión
+> de Fibonacci. Se dispondrá de N hebras para calcular hasta el término N-ésimo
+> de dicha sucesión, de forma que la hebra con identificador i-ésimo debe 
+> calcular el término i-ésimo utilizando los valores de las hebras i-1 e i-2. 
+> Las hebras deben esperar a que estén calculados los términos anteriores al 
+> suyo. Considerar los términos 0 y 1 como casos especiales.

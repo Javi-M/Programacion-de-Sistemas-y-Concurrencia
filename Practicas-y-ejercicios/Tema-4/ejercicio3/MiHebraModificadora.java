@@ -8,8 +8,15 @@ public class MiHebraModificadora extends Thread {
 	}
 	
 	public void run() {
-		for(int i = 0; i<=99; i++) {
-			v.set(i);
+		while (v.get() <= 99 && !(v.acabado)) {
+			if (v.puedeEscribir) {
+				v.puedeEscribir = false;
+				v.puedeImprimir = true;
+				v.inc();
+			}
+			if (v.get()==99) {
+				v.acabado = true;
+			}
 		}
 	}
 }

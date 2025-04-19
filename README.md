@@ -44,7 +44,18 @@ Para C, compila a manita con `gcc`.
 [p4e4]:   Practicas-y-ejercicios/Tema-4/ejercicio3
 
 # Conceptos clave
-- Región crítica
-- Exclusión mutua
-- Sincronización
-- 
+<dl> 
+   	<dt>Región crítica
+   	<dd>... 
+   	<dt>Exclusión mutua 
+   	<dd>...
+    <dt>Condición de sincronización
+    <dd>Restricción de algo que puede pasar o no al mismo tiempo. Ej., al mismo
+        tiempo no se puede producir y consumir. Debe ocurrir en exclusión mutua.
+        Suele indicar que un proceso debe <b>esperar</b> hasta que ocurra algo.
+    <dt>Espera activa
+    <dd>El proceso intenta una y otra vez tomar una acción, comprobando si se
+        cumple una condición de sincronización, hasta que puede avanzar. Por 
+        ejemplo en un bucle: <code>while(!SC) Thread.yield();</code> -> cuando 
+        <code>SC</code> es <code>true</code>, continúa.
+</dl>
